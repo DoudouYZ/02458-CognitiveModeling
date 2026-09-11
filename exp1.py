@@ -6,7 +6,7 @@ import pandas as pd
 images = glob.glob('FinalData/*.jpg')
 show_counts = np.zeros(len(images))
 ratings = np.zeros((len(images), 2))  # 2 columns: rating on 1st showing, rating on 2nd showing
-name = "s224202" # REMEMBER: update this to your own student ID
+name = "s234807" # REMEMBER: update this to your own student ID
 plt.ion()
 fig, ax = plt.subplots()
 
