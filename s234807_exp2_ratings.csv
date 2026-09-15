@@ -1,0 +1,12 @@
+FileName,PredictedRating,Rating1,Rating2,Rating3,Rating4,Rating5,Rating6,Rating7,Rating8,Rating9,Rating10
+exp2_data/face_01_rating_1.24.png,1.24,2,1,2,2,2,1,1,1,2,1
+exp2_data/face_02_rating_1.57.png,1.57,1,1,2,2,1,1,2,2,2,2
+exp2_data/face_03_rating_1.91.png,1.91,2,2,2,3,2,1,2,2,1,1
+exp2_data/face_04_rating_2.25.png,2.25,3,1,2,3,2,1,3,2,1,2
+exp2_data/face_05_rating_2.59.png,2.59,2,1,3,2,2,2,2,3,3,2
+exp2_data/face_06_rating_2.93.png,2.93,4,4,3,2,4,2,4,4,3,2
+exp2_data/face_07_rating_3.27.png,3.27,4,4,4,4,3,3,3,4,4,3
+exp2_data/face_08_rating_3.61.png,3.61,4,5,4,4,4,5,4,3,3,3
+exp2_data/face_09_rating_3.95.png,3.95,3,5,5,4,5,5,4,4,4,4
+exp2_data/face_10_rating_4.29.png,4.29,4,4,3,4,4,4,5,4,4,4
+exp2_data/face_11_rating_4.63.png,4.63,5,4,4,5,4,5,4,5,4,4
