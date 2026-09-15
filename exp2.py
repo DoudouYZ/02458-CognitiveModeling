@@ -20,7 +20,7 @@ images = sorted(images)
 n_repetitions = 10
 
 # CHANGE THIS for each participant
-name = "s224202"
+name = "s234807"
 
 
 # ============================================================
