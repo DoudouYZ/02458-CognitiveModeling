@@ -47,3 +47,6 @@ for i in range(1,6):
 print("Experiment completed. Here are your results:")
 for i in range(6):
     print(f"Experiment {order[i]}: Rating {results[i]}")
+
+results_df = pd.DataFrame({'Experiment': order, 'Rating': results})
+results_df.to_csv('exp3_results.csv', index=False)
