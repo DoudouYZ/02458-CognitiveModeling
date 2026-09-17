@@ -205,13 +205,20 @@ print(pca.components_.shape)
 # 8. EXPLAINED VARIANCE
 # ============================================================
 
+import seaborn as sns
+
 explained_variance = pca.explained_variance_ratio_
+
+# Same colors as rating histograms
+deep_blue = sns.color_palette("deep")[0]
 
 plt.figure(figsize=(10, 5))
 
 plt.bar(
     np.arange(1, len(explained_variance) + 1),
-    explained_variance * 100
+    explained_variance * 100,
+    color=deep_blue,
+    edgecolor="black"
 )
 
 plt.xlabel("Principal Component")
@@ -316,5 +323,8 @@ def visualize_pc(pc_number):
 
 
 # Visualize first six PCs
-for pc in range(1, 7):
-    visualize_pc(pc)
+
+# for pc in range(1, 7):
+    # visualize_pc(pc)
+
+visualize_pc(9)
