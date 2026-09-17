@@ -5,11 +5,11 @@ import pandas as pd
 from time import sleep
 
 student_id = "s224202"
+fig = plt.figure()
 def run_experiment(id:int, intro=False):
     if intro:
         print("Welcome to experiment 3. In a moment the first adapting image will be shown. Please focus your attention on the red dot in the center of the image. After the image changes, you will briefly see the test image. After that image dissappears, please rate it on a scale 1-5")
         sleep(5)
-    print("Starting experiment 3")
     test_id = id % 3
     adapting_id = id // 3
 
@@ -21,21 +21,24 @@ def run_experiment(id:int, intro=False):
 
     adapting_image = plt.imread(adapting_files[0])
     height, width = adapting_image.shape[:2]
-    fig1 = plt.figure()
-    plt.imshow(adapting_image)
+    fig.clf()
+    plt.figure(fig.number)
+    plt.imshow(adapting_image, cmap='gray')
     plt.plot(width / 2, height / 2, 'ro', markersize=10)
     plt.axis('off')
     plt.show(block=False)
     plt.pause(25)
-    plt.close(fig1)
 
     test_image = plt.imread(test_files[0])
-    fig2 = plt.figure()
-    plt.imshow(test_image)
+    fig.clf()
+    plt.figure(fig.number)
+    plt.imshow(test_image, cmap='gray')
     plt.axis('off')
     plt.show(block=False)
     plt.pause(1)
-    plt.close(fig2)
+    fig.clf()
+    plt.draw()
+    plt.pause(0.001)
 
     rating = input("Please rate the image on a scale of 1-5: ")
     return int(rating)
