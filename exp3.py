@@ -4,7 +4,7 @@ import glob
 import pandas as pd
 from time import sleep
 
-student_id = "s224202"
+student_id = "s234807"
 fig = plt.figure()
 def run_experiment(id:int, intro=False):
     if intro:
