@@ -4,6 +4,7 @@ import glob
 import pandas as pd
 from time import sleep
 
+student_id = "s224202"
 def run_experiment(id:int, intro=False):
     if intro:
         print("Welcome to experiment 3. In a moment the first adapting image will be shown. Please focus your attention on the red dot in the center of the image. After the image changes, you will briefly see the test image. After that image dissappears, please rate it on a scale 1-5")
@@ -49,4 +50,4 @@ for i in range(6):
     print(f"Experiment {order[i]}: Rating {results[i]}")
 
 results_df = pd.DataFrame({'Experiment': order, 'Rating': results})
-results_df.to_csv('exp3_results.csv', index=False)
+results_df.to_csv(f'{student_id}_exp3_results.csv', index=False)
